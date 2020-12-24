@@ -10,7 +10,7 @@ module.exports = {
     filename: 'bundle.js'
   },
     plugins: [
-    // fix "process is not defined" error:
+    // to fix "process is not defined" error:
     // (do "npm install process" before running the build)
     new webpack.ProvidePlugin({
       process: 'process/browser',
