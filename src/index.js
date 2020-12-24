@@ -2,7 +2,7 @@
 const Airtable = require('airtable');
 
 //Add your airtable API Key
-const base = new Airtable({apiKey: 'ENV['AIRTABLE_API_KEY']'}).base('appHYgUO41B1zoeP2');
+const base = new Airtable({apiKey: 'keyfkSWmS0pZn2dCL'}).base('appHYgUO41B1zoeP2');
 
 const current_user = 'david@opopop.co';
 let user_packages = [];
