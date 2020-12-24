@@ -33,4 +33,4 @@ base('Commandes')
    })
 })
 
-// End of case study
+// End of the case study
