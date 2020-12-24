@@ -1,0 +1,133 @@
+/*------------------------------------GLOBAL-------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    /*Converti les px en rem*/
+}
+
+body {
+    background-color: #F69E76;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/*------------------------------------HEADER-------------------------------*/
+
+header {
+	color:white;
+	padding: 5rem 0;
+}
+
+header img {
+	width: 200px;
+}
+
+.btn {
+	color:white;
+	padding: 1rem 3rem;
+	border-radius: 0.4rem;
+	border: 1px solid white;
+	background: #F69E76;
+}
+
+/*------------------------------------MAIN-------------------------------*/
+
+#orders {
+	background-color: white;
+	padding: 2rem 4rem 15rem;
+	border-radius: 2rem;
+	box-shadow: 0 5px 0 1px #e58963;
+	line-height: 3rem;
+}
+
+h1 {
+	color:#F69E76;
+}
+
+#orders article {
+	border-radius: 0.4rem;
+	margin: 2rem 0;
+	padding: 1rem 3rem;
+	color:#3b2525;
+}
+
+.package-preparation  {
+	background: linear-gradient(90deg,#f9e6ca 70%, #fdf5ea 70%);
+}
+
+.package-sent {
+	background: linear-gradient(90deg,#a5cbb7 70%, #c9e0d4 70%);
+}
+
+.package-return {
+	background: linear-gradient(90deg,#fcd8c2 70%, #fde8da 70%);
+}
+
+#orders article a {
+	background-color:white;
+	color:#F69E76;
+	padding: 0 1.5rem;
+	border-radius:5rem;
+}
+
+.package-status {
+	flex-basis: 14%;
+	text-align: center;
+	margin-right: 5rem;
+}
+
+.return-info {
+	display: block;
+	text-align: right;
+	color:#67a685;
+}
+
+/*------------------------------------FOOTER-------------------------------*/
+
+footer {
+	color:white;
+	padding:2rem 0;
+}
+
+footer .flex {
+	justify-content: flex-end;
+}
+
+.user::after {
+	content:'|';
+	padding:0 4rem;
+}
+
