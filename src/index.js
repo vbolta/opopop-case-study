@@ -2,7 +2,7 @@
 const Airtable = require('airtable');
 
 //Add your airtable API Key
-const base = new Airtable({apiKey: 'keyfkSWmS0pZn2dCL'}).base('appHYgUO41B1zoeP2');
+const base = new Airtable({apiKey: 'Airtable_API_KEY'}).base('appHYgUO41B1zoeP2');
 
 const current_user = 'david@opopop.co';
 let user_packages = [];
@@ -17,6 +17,20 @@ for(let i = 0; i < package_number.length; i++) {
 }
 
 // Use the airtable API to retrieves the packages number
+
+// const getRecords = (err,records) => {
+//   if (err) { console.error(err); return; }
+//   records.forEach((record) => {
+//       // Retrieve all the packages numbers only for 'david@opopop.co' and that are not 'undefined'
+//       if (record.get('Utilisateur') === current_user
+//         && record.get('Colis') != undefined) {
+//         user_packages.push(record.get('Colis'));
+//       // Call the displaypackageNumber function 
+//         return displaypackageNumber();
+//       }
+//    })
+//   }
+
 
 base('Commandes')
 .select({ view: 'Commandes'})
